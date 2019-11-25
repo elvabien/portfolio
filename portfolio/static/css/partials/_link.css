@@ -1,0 +1,21 @@
+.epw-Link {
+  color: var(--epw-color-red);
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.epw-Link:hover,
+.epw-Link:active,
+.epw-Link:focus {
+  color: var(--epw-color-coconutDarken);
+}
+
+.epw-Link--nav {
+  box-sizing: border-box;
+  color: var(--epw-color-coconut);
+  display: inline-block;
+  font-size: 3rem;
+  padding: 2rem;
+  text-decoration: none;
+  width: 100%
+}

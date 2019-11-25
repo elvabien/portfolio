@@ -1,0 +1,41 @@
+.epw-Form {
+  width: 100%;
+}
+
+.epw-Form p {
+  display: flex;
+  flex-direction: column;
+}
+
+.epw-Form label {
+  font-weight: 700;
+}
+
+.epw-Form-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--epw-color-red);
+  box-sizing: border-box;
+  font: .875rem 'Maven Pro';
+  line-height: 1.3rem;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  transition: border .3s ease-in-out;
+}
+
+.epw-Form-input:focus {
+  border: 1px solid var(--epw-color-red);
+  outline: none;
+}
+
+.epw-Form-submit {
+  color: var(--epw-color-coconut);
+  background-color: var(--epw-color-red);
+  border-color: var(--epw-color-red);
+  border-style: none;
+  font: .75rem 'Maven Pro';
+  font-weight: 700;
+  line-height: 1rem;
+  margin: .2rem;
+  padding: .69rem 1.5rem;
+}

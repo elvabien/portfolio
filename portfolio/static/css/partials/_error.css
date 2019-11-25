@@ -1,0 +1,5 @@
+ul .errorlist {
+  color: var(--epw-color-turquoise);
+  font-weight: 600;
+  list-style-type: none;
+}

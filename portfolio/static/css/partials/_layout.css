@@ -1,0 +1,11 @@
+.epw-Layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.epw-Layout-main {
+  flex: 1 0 0;
+}

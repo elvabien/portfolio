@@ -1,0 +1,10 @@
+.epw-List {
+  font-size: 1rem;
+}
+
+.epw-List--nav {
+  color: white;
+  margin-top: 5rem;
+  text-align: end;
+  text-transform: uppercase;
+}

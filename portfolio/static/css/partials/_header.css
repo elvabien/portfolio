@@ -1,0 +1,108 @@
+.epw-Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.epw-Header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.epw-Header-wrapperBrand {
+  width: 10rem;
+}
+
+.epw-Header-logo{
+  height: 4.25rem;
+}
+
+.epw-Header-menu {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.epw-Header-menuIcon {
+	background: var(--epw-color-red);
+  cursor: pointer;
+	display: inline-block;
+  height: 46px;
+  margin: .5rem 1.5rem;
+	position: relative;
+	width: 46px;
+}
+	
+.epw-Header-menuIconBar {
+  position: absolute;
+  width: 36px;
+  height: 4px;
+	background: var(--epw-color-coconut);
+  transition: all 300ms ease;
+}
+
+.epw-Header-menuIconBar:nth-child(1n) {
+  left: 5px;
+  top: 12px;
+}
+		
+.epw-Header-menuIconBar:nth-child(2) {
+  left: 5px;
+  top: 21px;
+}
+			
+.epw-Header-menuIconBar:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  top: 21px;
+  width: 36px;
+  height: 4px;
+  background: var(--epw-color-coconut);
+  transition: all 300ms ease;
+}
+		
+.epw-Header-menuIconBar:nth-child(4) {
+  right: 12px;
+  top: 30px;
+}
+
+.epw-Header-menuIcon >
+.epw-firstBar,
+.epw-Header-menuIcon >
+.epw-fourthBar {
+  width: 0;
+}
+
+.epw-Header-menuIcon >
+.epw-secondBarOver {
+	transform: rotate(-45deg);
+}			
+
+.epw-Header-menuIcon:hover > .epw-secondBarOverBefore {
+  transform: rotate(45deg);
+}
+
+.epw-Header-nav {
+  background-color: var(--epw-color-red);
+  opacity: 0;
+  position: absolute;
+  right: -100%;
+  top: 58px;
+  transition: right .3s ease, opacity .3s ease-in-out;
+  width: 100%;
+}
+
+.epw-Header--navOpen .epw-Header-nav {
+  height: 100vh;
+  opacity: 0.9;
+  right: 0;
+  width: 80vw;
+  z-index: -1;
+}
